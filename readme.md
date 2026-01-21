@@ -6,6 +6,6 @@ There are a couple resources available in `/docs` for learning Chrona:
 
 - the [overview](./docs/overview.md), which explains what Chrona is and who it's for.
 - the [getting started guide](./docs/getting-started.md), which explains how to use Chrona.
-- the examples, available at `/docs/examples`.
+- the examples, available at `/docs/examples`, which can be viewed [here](https://larbagar.github.io/chrona-physics/).
 
 To use Chrona, copy the `/chrona` directory into your project and import from `/chrona/index.mjs`.

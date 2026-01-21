@@ -8,7 +8,7 @@ Chrona is a fairly unusual physics engine. While it’s conceptually deep, it’
 
 ## Setup
 
-To start a project with Chrona simply copy the `chrona` folder from the Chrona repository [(TODO add link)]() into your project.
+To start a project with Chrona simply copy the folder, `/chrona`, from the [Chrona repository](https://github.com/Larbagar/chrona-physics) into your project.
 
 When you want to use Chrona, import what you need from `/chrona/index.mjs`.
 
