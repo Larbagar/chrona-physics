@@ -8,17 +8,34 @@ Chrona is a fairly unusual physics engine. While it’s conceptually deep, it’
 
 ## Setup
 
-To start a project with Chrona simply copy the folder, `/chrona`, from the [Chrona repository](https://github.com/Larbagar/chrona-physics) into your project.
+To include Chrona in a project, run `npm i @darcyvilkner/chrona-physics`.
 
-When you want to use Chrona, import what you need from `/chrona/index.mjs`.
+You can then import Chrona components from the package:
 
 ```js
-import {V2, Transform, Clock, PhysicsObject} from "/package/index.mjs"
+import {V2, Transform, Clock, PhysicsObject} from "@darcyvilkner/chrona-physics"
 ```
 
-Chrona uses JavaScript's [module system](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules). This means that your script must be marked as a module, and the page must be served from a secure context (`https://` or a local server).
+### Note on Browser Usage
 
-This tutorial uses a small template to simplify the rendering setup. This template is not required to use Chrona, but it allows the examples to focus on the engine rather than the boilerplate. You can find it in the repository at `/docs/examples/template`.
+Chrona can be used directly in the browser, however, There are some additional steps that must be taken.
+
+First, Chrona uses npm's module naming system, which browsers don't natively understand. The easiest way of dealing with this is to expose the `node_modules` folder and use an import map:
+
+```html
+<script type = "importmap">
+{
+    "imports": {
+        "@darcyvilkner/2d-geometry": "./node_modules/@darcyvilkner/2d-geometry/index.mjs",
+        "@darcyvilkner/chrona-physics": "./node_modules/@darcyvilkner/chrona-physics/index.mjs"
+    }
+}
+</script>
+```
+
+You can then import Chrona normally from your JavaScript modules.
+
+Since Chrona uses JavaScript's [module system](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules), all scripts that use it must be marked with `type="module"` and be served from a secure context (`https://` or a local server).
 
 ## Clocks
 
