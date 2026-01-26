@@ -11,7 +11,7 @@ export {GeometryBuilder} from "./tools/geometry-builder.mjs"
 
 export {Trajectory} from "./physics/trajectory.mjs"
 
-export {CollisionGroup} from "./physics/collisions/collision-group.mjs"
+export {CollisionGroup, collisionGroups} from "./physics/collisions/collision-group.mjs"
 export {CollisionRule} from "./physics/collisions/collision-rule.mjs"
 export {ToleranceProfile} from "./physics/collisions/tolerance-profile.mjs"
 

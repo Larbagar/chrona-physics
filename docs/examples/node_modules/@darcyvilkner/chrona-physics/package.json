@@ -1,6 +1,6 @@
 {
   "name": "@darcyvilkner/chrona-physics",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lightweight physics library for games and simulations.",
   "type": "module",
   "main": "./index.mjs",
