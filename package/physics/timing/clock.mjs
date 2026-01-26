@@ -136,6 +136,7 @@ class Clock {
      * 
      * If this runs more than {@link Clock#runToCycleLimit} times, an error is thrown.
      * This limit exists to prevent infinite loops or excessively long computations.
+     * The calculation can be resumed by calling runTo again with the same time.
      * 
      * @param {number} time The time to advance to.
      */

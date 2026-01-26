@@ -75,8 +75,8 @@ Advancing time isn't very interesting if nothing happens, so let's schedule some
 const clk = new Clock()
 
 schedule(clk, 1, () => console.log(`Fred asks Jeff what time it is.`))
-schedule(clk, 3, () => console.log(`Startled, Fred responds, "1.5? Already?"`))
-schedule(clk, 1.5, () => console.log(`Jeff says the time is ${clk.time}.`))
+schedule(clk, 3, () => console.log(`Startled, Fred responds, "No! Already?"`))
+schedule(clk, 1.5, () => console.log(`Jeff says it is currently ${clk.time}.`))
 
 clk.runTo(4)
 /*
